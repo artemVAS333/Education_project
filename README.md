@@ -27,10 +27,3 @@ npm run dev
 ```sh
 npm run build
 ```
-
-git init
-git add .
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/artemVAS333/CalcFood.git
-git push -u origin main
