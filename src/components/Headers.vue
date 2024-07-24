@@ -1,16 +1,12 @@
 <template>
-    <Headers />
+    <h1>{{ name }}</h1>
 </template>
 
 <script>
-import Headers from './components/Headers.vue'
-
 export default {
-    components: {
-        Headers
-    },
     data() {
         return {
+            name: 'GYM'
         }
     }
 }
