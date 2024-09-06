@@ -1,8 +1,5 @@
-<template>
-    <Headers />
-</template>
-
 <script>
+
 import Headers from './components/Headers.vue'
 
 export default {
@@ -15,5 +12,9 @@ export default {
     }
 }
 </script>
+
+<template>
+    <Headers />
+</template>
 
 <style></style>
