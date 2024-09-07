@@ -1,10 +1,12 @@
 <script>
 
 import Headers from './components/Headers.vue'
+import Main_Page from './components/Main_Page.vue'
 
 export default {
     components: {
-        Headers
+        Headers,
+        Main_Page,
     },
     data() {
         return {
@@ -15,6 +17,7 @@ export default {
 
 <template>
     <Headers />
+    <Main_Page />
 </template>
 
 <style></style>
