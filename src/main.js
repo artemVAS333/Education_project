@@ -5,4 +5,9 @@ import App from './App.vue'
 import './assets/css/main.css'
 import './assets/js/script.js'
 
-createApp(App).mount('#app')
+import router from './router.js'
+
+const app = createApp(App)
+
+app.use(router)
+app.mount('#app')
