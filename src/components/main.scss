@@ -1,14 +1,19 @@
 .header {
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    background-color: #18253d;
+
+}
+
+.header_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 10px auto;
+    margin: 0 auto;
     max-width: 1000px;
-    height: 50px;
-
-    background-color: #fbe2c223;
-    border-radius: 10px;
-
+    user-select: none;
     padding: 10px;
 
     .title {
@@ -36,9 +41,16 @@
 }
 
 .main {
-    text-align: justify;
-    margin: 10px auto;
+    position: relative;
+    margin: 0 auto;
     max-width: 1000px;
+}
+
+.main_container {
+    width: 100%;
+    position: absolute;
+    text-align: justify;
+    margin: 50px auto;
 
     background-color: #fbe2c223;
     border-radius: 10px;

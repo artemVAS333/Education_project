@@ -3,7 +3,9 @@
 
 <template>
     <div class="main">
-        <RouterView />
+        <div class="main_container">
+            <RouterView />
+        </div>
     </div>
 </template>
 
