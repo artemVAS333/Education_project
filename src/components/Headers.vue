@@ -1,8 +1,10 @@
 <script>
 export default {
-    methods: {
-        scrollToTop() {
-            window.scrollTo(0, 0);
+    data() {
+        return {
+            link: {
+                home: '/Education/',
+            }
         }
     }
 }
@@ -22,7 +24,7 @@ export default {
                 <div class="menu-item">
                     <RouterLink to="/Education/contacts">Контакти</RouterLink>
                 </div>
-                <div class="menu-item">
+                <div class=" menu-item">
                     <RouterLink to="/Education/schedule">Розклад</RouterLink>
                 </div>
             </div>

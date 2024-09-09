@@ -9,13 +9,22 @@ import NotFoundPage from './components/Pages/NotFoundPage.vue'
 
 const name = "Education"
 
-const routes = [
-    { path: `/${name}/`, component: Home, alias: `/` },
-    { path: `/${name}/about`, component: About },
-    { path: `/${name}/contacts`, component: Contacts },
-    { path: `/${name}/schedule`, component: Schedule },
+const link = {
+    home: `/${name}/`,
+    about: `/${name}/about`,
+    contacts: `/${name}/contacts`,
+    schedule: `/${name}/schedule`,
 
-    { path: `/:pathMatch(.*)*`, component: NotFoundPage }
+    notFound: `/:pathMatch(.*)*`
+}
+
+const routes = [
+    { path: link.home, component: Home, alias: `/` },
+    { path: link.about, component: About },
+    { path: link.contacts, component: Contacts },
+    { path: link.schedule, component: Schedule },
+
+    { path: link.notFound, component: NotFoundPage }
 ]
 
 export default createRouter({
