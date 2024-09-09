@@ -7,13 +7,15 @@ import Schedule from './components/Pages/Schedule/Schedule.vue'
 
 import NotFoundPage from './components/Pages/NotFoundPage.vue'
 
-const routes = [
-    { path: '/Education/', component: Home, alias: '/Education/' },
-    { path: '/Education/about', component: About },
-    { path: '/Education/contacts', component: Contacts },
-    { path: '/Education/schedule', component: Schedule },
+const name = "Education"
 
-    { path: '/:pathMatch(.*)*', component: NotFoundPage }
+const routes = [
+    { path: `/${name}/`, component: Home, alias: `/` },
+    { path: `/${name}/about`, component: About },
+    { path: `/${name}/contacts`, component: Contacts },
+    { path: `/${name}/schedule`, component: Schedule },
+
+    { path: `/:pathMatch(.*)*`, component: NotFoundPage }
 ]
 
 export default createRouter({

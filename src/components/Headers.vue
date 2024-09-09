@@ -20,7 +20,7 @@ export default {
                     <RouterLink to="/Education/about">Про нас</RouterLink>
                 </div>
                 <div class="menu-item">
-                    <RouterLink to="/Education/contacts" @click="scrollToTop()">Контакти</RouterLink>
+                    <RouterLink to="/Education/contacts">Контакти</RouterLink>
                 </div>
                 <div class="menu-item">
                     <RouterLink to="/Education/schedule">Розклад</RouterLink>
