@@ -6,6 +6,11 @@ export default {
                 home: '/Education/',
             }
         }
+    },
+    methods: {
+        setTitle(title) {
+            document.title = title
+        }
     }
 }
 </script>
@@ -13,7 +18,9 @@ export default {
 <template>
     <header class="header">
         <div class="header_container">
-            <div class="title">ЧНУ</div>
+            <div class="title">
+                ЧНУ
+            </div>
             <div class="menu">
                 <div class="menu-item">
                     <RouterLink to="/Education/#">Головна</RouterLink>

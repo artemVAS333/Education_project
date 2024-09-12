@@ -1,8 +1,4 @@
-<script>
-export default {
-
-}
-</script>
+<script></script>
 
 <template>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum ab dolorem quas! Repellat sint, deleniti aperiam

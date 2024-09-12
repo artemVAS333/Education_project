@@ -11,3 +11,44 @@
         margin: 0 auto;
     }
 }
+
+.day {
+    background-color: #f7cb91;
+    color: black;
+    margin: 10px;
+    border-radius: 5px;
+    padding: 10px 20px;
+
+    .title {
+        font-size: 28px;
+        padding: 0 10px 5px 5px;
+    }
+}
+
+.day.active {
+    background-color: #000;
+    color: #fbe2c2;
+}
+
+.shedule_day {
+    display: flex;
+}
+
+.subjects_of_day {
+    width: 100%;
+}
+
+.free {
+    opacity: 0.3;
+}
+
+.subject_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2px;
+}
+
+.timetable {
+    text-align: center;
+}

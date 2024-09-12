@@ -17,7 +17,6 @@ export default {
 <template>
     <Headers />
     <Main_Page />
-    <Main_Page />
 </template>
 
 <style></style>
