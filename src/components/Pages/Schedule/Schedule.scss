@@ -1,3 +1,9 @@
+.title {
+    font-size: 40px;
+    padding: 10px;
+    font-weight: 600;
+}
+
 .list {
     justify-content: space-between;
     align-items: center;
@@ -26,9 +32,14 @@
 }
 
 .currentDay {
-    background-color: #000;
+    background-color: #18253d;
     color: #fbe2c2;
+    border: 1px solid #fbe2c2;
     border-radius: 10px;
+
+    .subject_info {
+        background-color: #f7cb9110;
+    }
 }
 
 .shedule_day {
@@ -40,7 +51,7 @@
 }
 
 .free {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .subject_info {
@@ -48,6 +59,25 @@
     justify-content: space-between;
     align-items: center;
     margin: 2px;
+    background-color: #18253d30;
+    border-radius: 5px;
+    padding: 2px 0;
+
+    :nth-child(n) {
+        padding: 0 10px;
+    }
+
+    .subject {
+        flex: 1 1 auto;
+    }
+
+    .teacher {
+        width: 200px;
+    }
+
+    .cabinet {
+        width: 90px;
+    }
 }
 
 .timetable {

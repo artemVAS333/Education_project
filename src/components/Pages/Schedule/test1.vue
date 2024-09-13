@@ -4,7 +4,7 @@ import Tue from './week1/Tue.vue';
 import Wed from './week1/Wed.vue'
 import Thu from './week1/Thu.vue';
 import Fri from './week1/Fri.vue';
-
+import Sat from './week1/Sat.vue';
 
 import { freeItems, currentDay } from './week1/main';
 
@@ -23,15 +23,7 @@ onMounted(() => {
             <Wed />
             <Thu />
             <Fri />
-            <Fri />
-            <Fri />
-            <Fri />
-            <Fri />
-            <Fri />
-            <Fri />
-            <Fri />
-            <Fri />
-            <Fri />
+            <Sat />
         </div>
         <!-- <div class="week2">
             <Mon />

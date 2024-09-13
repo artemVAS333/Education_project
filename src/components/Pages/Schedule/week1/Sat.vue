@@ -4,7 +4,7 @@ import { timetable } from './main';
 
 <template>
     <div class="day">
-        <div class="title">Понеділок</div>
+        <div class="title">Субота</div>
         <div class="shedule_day">
             <div class="subjects_of_day">
                 <div class="subject_info">

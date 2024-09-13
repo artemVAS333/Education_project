@@ -8,7 +8,7 @@ let item = 0
 </script>
 
 <template>
-    <h1>Розклад {{ groups[item] }}</h1>
+    <h1 class="title">Розклад {{ groups[item] }}</h1>
     <!-- <ul class="list">
         <li class="list_item" @click="item = 0">141 (1)</li>
         <li class="list_item" @click="item = 1">141 (2-1)</li>

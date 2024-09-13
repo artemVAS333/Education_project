@@ -1,20 +1,59 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
-* {
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
+    border: 0;
     box-sizing: border-box;
 
     -webkit-tap-highlight-color: transparent;
 }
 
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+
+img {
+    vertical-align: top;
+}
+
+a {
+    text-decoration: none;
+    color: #fbe2c2;
+}
+
+html,
 body {
+    height: 100%;
+    /* line-height: 1; */
     background-color: #18253d;
     color: #fbe2c2;
-
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+
+.user-select-none {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 ::selection {
@@ -33,11 +72,6 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: #fbe2c2;
     border-radius: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #fbe2c2;
 }
 
 :active,

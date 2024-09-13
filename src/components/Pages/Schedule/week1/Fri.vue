@@ -1,7 +1,5 @@
 <script setup>
-import { timetable, freeItems } from './main';
-
-freeItems();
+import { timetable } from './main';
 </script>
 
 <template>
