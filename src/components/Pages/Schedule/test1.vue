@@ -23,6 +23,15 @@ onMounted(() => {
             <Wed />
             <Thu />
             <Fri />
+            <Fri />
+            <Fri />
+            <Fri />
+            <Fri />
+            <Fri />
+            <Fri />
+            <Fri />
+            <Fri />
+            <Fri />
         </div>
         <!-- <div class="week2">
             <Mon />
