@@ -1,4 +1,4 @@
-export function free_items() {
+export function freeItems() {
     const subject_info = document.querySelectorAll('.subject_info');
     const subject = document.querySelectorAll('.subject');
     const teacher = document.querySelectorAll('.teacher');
@@ -11,10 +11,18 @@ export function free_items() {
 }
 
 export const timetable = {
-    time1: "08:20 - 09:40",
-    time2: "09:50 - 11:10",
-    time3: "11:30 - 12:50",
-    time4: "13:00 - 14:20",
-    time5: "14:30 - 16:00",
-    time6: "16:10 - 17:30",
+    pair1: "08:20 - 09:40",
+    pair2: "09:50 - 11:10",
+    pair3: "11:30 - 12:50",
+    pair4: "13:00 - 14:20",
+    pair5: "14:30 - 16:00",
+    pair6: "16:10 - 17:30",
+}
+
+export function currentDay() {
+    const day = document.querySelectorAll('.day');
+    let dayOfWeek = new Date().getDay() - 1;
+    if (dayOfWeek <= day.length) {
+        day[dayOfWeek].classList.add('currentDay');
+    }
 }

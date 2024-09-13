@@ -1,4 +1,5 @@
-<script></script>
+<script setup>
+</script>
 
 <template>
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor cum ab dolorem quas! Repellat sint, deleniti aperiam

@@ -1,18 +1,4 @@
-<script>
-export default {
-    data() {
-        return {
-            link: {
-                home: '/Education/',
-            }
-        }
-    },
-    methods: {
-        setTitle(title) {
-            document.title = title
-        }
-    }
-}
+<script setup>
 </script>
 
 <template>

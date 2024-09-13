@@ -25,9 +25,10 @@
     }
 }
 
-.day.active {
+.currentDay {
     background-color: #000;
     color: #fbe2c2;
+    border-radius: 10px;
 }
 
 .shedule_day {

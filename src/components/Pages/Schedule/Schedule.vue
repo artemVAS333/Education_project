@@ -1,21 +1,10 @@
-<script>
+<script setup>
 import test1 from './test1.vue'
 
 const groups = [
     "141 (1)", "141 (2-1)", "141 (2-2)", "141 (3)"
 ]
-
-export default {
-    components: {
-        test1
-    },
-    data() {
-        return {
-            groups: groups,
-            item: 0
-        }
-    }
-}
+let item = 0
 </script>
 
 <template>
