@@ -42,7 +42,7 @@ const routes = [
         name: 'schedule',
         path: link.schedule,
         component: Schedule,
-        meta: { toTop: false, behavior: false }
+        toTop: false
     },
 
     { path: link.notFound, component: NotFoundPage }
