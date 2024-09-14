@@ -10,16 +10,16 @@
                 </div>
                 <div class="menu">
                     <div class=" menu-item">
-                        <RouterLink to="/Education/#">Головна</RouterLink>
+                        <RouterLink :to="{ name: 'home' }">Головна</RouterLink>
                     </div>
                     <div class="menu-item">
-                        <RouterLink to="/Education/about">Про нас</RouterLink>
+                        <RouterLink :to="{ name: 'about' }">Про нас</RouterLink>
                     </div>
                     <div class="menu-item">
-                        <RouterLink to="/Education/contacts">Контакти</RouterLink>
+                        <RouterLink :to="{ name: 'contacts' }">Контакти</RouterLink>
                     </div>
                     <div class=" menu-item">
-                        <RouterLink to="/Education/schedule">Розклад</RouterLink>
+                        <RouterLink :to="{ name: 'schedule' }">Розклад</RouterLink>
                     </div>
                 </div>
             </div>
@@ -39,10 +39,4 @@
 
 <style>
 @import url('./style.scss');
-
-.wrapper {
-    display: grid;
-    grid-template-rows: min-content 1fr min-content;
-    min-height: 100vh;
-}
 </style>

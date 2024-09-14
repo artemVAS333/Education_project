@@ -1,7 +1,7 @@
 .wrapper {
-    min-height: 100%;
-    display: flex;
-    flex-direction: column;
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
     max-width: 1000px;
     margin: 0 auto;
 }
@@ -16,7 +16,6 @@
 }
 
 .footer {
-
     padding: 10px;
     color: #fbe2c2;
     text-align: center;
@@ -41,8 +40,6 @@
     }
 
     .menu {
-        right: 0;
-
         display: flex;
         flex-wrap: wrap;
         gap: 10px;
@@ -56,7 +53,8 @@
         transition: 0.3s;
     }
 
-    .menu-item:hover {
+    .menu-item:hover,
+    a.router-link-active {
         cursor: pointer;
         border-top: 1px solid;
     }
@@ -64,9 +62,17 @@
 
 .main_container {
     text-align: justify;
-
     background-color: #fbe2c223;
     border-radius: 10px;
-
     padding: 10px;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+    opacity: 0;
 }

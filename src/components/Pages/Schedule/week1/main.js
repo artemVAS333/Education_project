@@ -24,8 +24,10 @@ export function currentDay() {
     const dayOfWeek = new Date().getDay() - 1;
     if (dayOfWeek <= day.length) {
         day[dayOfWeek].classList.add('currentDay');
-        day[dayOfWeek].scrollIntoView({ block: "center", behavior: "smooth" });
-        scroll
     }
-    // scrollIntoView();
+    scrollToElement(day[dayOfWeek]);
+}
+
+function scrollToElement(params) {
+    params.scrollIntoView({ block: "center", behavior: "smooth" });
 }
