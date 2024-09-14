@@ -24,25 +24,25 @@ const routes = [
         path: link.home,
         component: Home,
         alias: `/`,
-        toTop: true
+        meta: { toTop: true, behavior: true }
     },
     {
         name: 'about',
         path: link.about,
         component: About,
-        toTop: true
+        meta: { toTop: true, behavior: true }
     },
     {
         name: 'contacts',
         path: link.contacts,
         component: Contacts,
-        toTop: true
+        meta: { toTop: true, behavior: true }
     },
     {
         name: 'schedule',
         path: link.schedule,
         component: Schedule,
-        toTop: false
+        meta: { toTop: false, behavior: false }
     },
 
     { path: link.notFound, component: NotFoundPage }
@@ -52,6 +52,11 @@ export default createRouter({
     history: createWebHistory(),
     routes: routes,
     scrollBehavior(to, from, savedPosition) {
-        if (to.toTop) return { top: 0 }
+        if (to.meta.toTop) {
+            if (to.meta.behavior) {
+                return { top: 0, behavior: 'smooth' }
+            }
+            return { top: 0 }
+        }
     }
 })
