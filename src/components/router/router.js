@@ -30,7 +30,7 @@ const routes = [
         component: () => import('../views/About.vue'),
         meta: {
             toTop: true,
-            behavior: true
+            behavior: false
         }
     },
     {
@@ -68,6 +68,7 @@ export default createRouter({
             if (to.meta.behavior) {
                 return { top: 0, behavior: "smooth" }
             }
+            return { top: 0 }
         }
     }
 })

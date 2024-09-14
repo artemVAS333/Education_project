@@ -1,5 +1,5 @@
 <script setup>
-import { timetable } from './main';
+import { timetable } from '../main';
 </script>
 
 <template>

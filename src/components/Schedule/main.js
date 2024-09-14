@@ -21,7 +21,7 @@ export const timetable = {
 
 export function currentDay() {
     const day = document.querySelectorAll('.day');
-    const dayOfWeek = new Date().getDay() - 1;
+    const dayOfWeek = new Date().getDay();
     if (dayOfWeek >= 0 && dayOfWeek < day.length) {
         day[dayOfWeek].classList.add('currentDay');
         scrollToElement(day[dayOfWeek]);

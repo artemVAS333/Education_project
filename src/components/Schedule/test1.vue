@@ -5,8 +5,9 @@ import Wed from './week1/Wed.vue'
 import Thu from './week1/Thu.vue';
 import Fri from './week1/Fri.vue';
 import Sat from './week1/Sat.vue';
+import Sun from './week1/Sun.vue';
 
-import { freeItems, currentDay } from './week1/main';
+import { freeItems, currentDay } from './main';
 
 import { onMounted } from 'vue';
 onMounted(() => {
@@ -18,6 +19,7 @@ onMounted(() => {
 <template>
     <div class="schedule">
         <div class="week1">
+            <Sun />
             <Mon />
             <Tue />
             <Wed />
