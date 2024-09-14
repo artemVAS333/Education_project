@@ -6,13 +6,10 @@
     margin: 0 auto;
 }
 
-.header {
-    height: 60px;
-}
-
 .main {
     flex: 1 1 auto;
     height: 100%;
+    padding-top: 60px;
 }
 
 .footer {
@@ -25,8 +22,8 @@
 
 .header_container {
     position: fixed;
-    width: 100%;
-    max-width: 1000px;
+    width: clamp(200px, 100%, 1000px);
+    height: 60px;
     z-index: 1000;
 
     display: flex;
@@ -35,7 +32,7 @@
     background-color: #18253d;
 
     .title {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: bold;
     }
 
@@ -51,16 +48,17 @@
         font-size: 18px;
         border-top: 1px solid transparent;
         transition: 0.3s;
-    }
 
-    .menu-item:hover,
-    a.router-link-active {
-        cursor: pointer;
-        border-top: 1px solid;
+        &:hover,
+        a.router-link-active {
+            border-top: 1px solid;
+        }
     }
 }
 
 .main_container {
+    font-size: clamp(16px, 2.5vw, 1.2rem);
+    height: 100%;
     text-align: justify;
     background-color: #fbe2c223;
     border-radius: 10px;

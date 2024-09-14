@@ -1,11 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 import Home from '../views/Home.vue'
-import About from '../views/About.vue'
-import Contacts from '../views/Contacts.vue'
-import Schedule from '../Schedule/Schedule.vue'
-
-import NotFoundPage from '../views/NotFoundPage.vue'
 
 const name = "Education"
 
@@ -32,7 +27,7 @@ const routes = [
     {
         name: 'about',
         path: link.about,
-        component: About,
+        component: () => import('../views/About.vue'),
         meta: {
             toTop: true,
             behavior: true
@@ -41,7 +36,7 @@ const routes = [
     {
         name: 'contacts',
         path: link.contacts,
-        component: Contacts,
+        component: () => import('../views/Contacts.vue'),
         meta: {
             toTop: true,
             behavior: true
@@ -50,14 +45,14 @@ const routes = [
     {
         name: 'schedule',
         path: link.schedule,
-        component: Schedule,
+        component: () => import('../Schedule/Schedule.vue'),
         meta: {
             toTop: false,
             behavior: false
         }
     },
 
-    { path: link.notFound, component: NotFoundPage }
+    { path: link.notFound, component: () => import('../views/NotFoundPage.vue') }
 ]
 
 export default createRouter({
