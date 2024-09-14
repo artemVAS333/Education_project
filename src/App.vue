@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
     <div class="wrapper">
         <header class="header">
@@ -20,6 +17,9 @@
                     </div>
                     <div class=" menu-item">
                         <RouterLink :to="{ name: 'schedule' }">Розклад</RouterLink>
+                    </div>
+                    <div class="menu-item">
+                        <RouterLink :to="{ name: 'notFound' }"> 404 </RouterLink>
                     </div>
                 </div>
             </div>

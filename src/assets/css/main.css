@@ -34,6 +34,7 @@ img {
 a {
     text-decoration: none;
     color: #fbe2c2;
+    user-select: none;
 }
 
 html,

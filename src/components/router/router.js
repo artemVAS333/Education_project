@@ -46,13 +46,18 @@ const routes = [
         name: 'schedule',
         path: link.schedule,
         component: () => import('../Schedule/Schedule.vue'),
+
         meta: {
             toTop: false,
             behavior: false
         }
     },
 
-    { path: link.notFound, component: () => import('../views/NotFoundPage.vue') }
+    {
+        name: 'notFound',
+        path: link.notFound,
+        component: () => import('../views/NotFoundPage.vue')
+    }
 ]
 
 export default createRouter({
