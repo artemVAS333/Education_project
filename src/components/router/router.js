@@ -3,7 +3,7 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import About from '../views/About.vue'
 import Contacts from '../views/Contacts.vue'
-import Schedule from '../Pages/Schedule/Schedule.vue'
+import Schedule from '../Schedule/Schedule.vue'
 
 import NotFoundPage from '../views/NotFoundPage.vue'
 
