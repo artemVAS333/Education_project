@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 
+:root {
+    --main-color: #fbe2c2;
+    --main-bg-color: #18253d;
+}
+
 *,
 *::before,
 *::after {
@@ -40,9 +45,8 @@ a {
 html,
 body {
     height: 100%;
-    /* line-height: 1; */
-    background-color: #18253d;
-    color: #fbe2c2;
+    background-color: var(--main-bg-color);
+    color: var(--main-color);
     font-family: "Play", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -58,8 +62,8 @@ body {
 }
 
 ::selection {
-    background-color: #fbe2c2;
-    color: #18253d;
+    background-color: var(--main-color);
+    color: var(--main-bg-color);
 }
 
 ::-webkit-scrollbar {
@@ -71,7 +75,7 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #fbe2c2;
+    background-color: var(--main-color);
     border-radius: 20px;
 }
 

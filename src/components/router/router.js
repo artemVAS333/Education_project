@@ -45,8 +45,7 @@ const routes = [
     {
         name: 'schedule',
         path: link.schedule,
-        component: () => import('../Schedule/Schedule.vue'),
-
+        component: () => import('../schedule/Schedule.vue'),
         meta: {
             toTop: false,
             behavior: false
@@ -56,7 +55,7 @@ const routes = [
     {
         name: 'notFound',
         path: link.notFound,
-        component: () => import('../views/NotFoundPage.vue')
+        component: () => import('../views/NotFoundPage.vue'),
     }
 ]
 

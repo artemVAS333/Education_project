@@ -1,7 +1,7 @@
 <template>
     <div class="page_container">
         <div class="code">#404</div>
-        <div class="title">Page not found :((((</div>
+        <div class="title">Page not found :(((</div>
         <RouterLink :to="{ name: 'home' }">
             <div class="home_page-btn">
                 Go to main page

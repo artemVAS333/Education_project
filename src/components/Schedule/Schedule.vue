@@ -1,20 +1,18 @@
 <script setup>
+import { reactive } from 'vue';
 import test1 from './test1.vue'
 
 const groups = [
     "141 (1)", "141 (2-1)", "141 (2-2)", "141 (3)"
 ]
-let item = 0
+
 </script>
 
 <template>
-    <h1 class="title">Розклад {{ groups[item] }}</h1>
-    <!-- <ul class="list">
-        <li class="list_item" @click="item = 0">141 (1)</li>
-        <li class="list_item" @click="item = 1">141 (2-1)</li>
-        <li class="list_item" @click="item = 2">141 (2-2)</li>
-        <li class="list_item" @click="item = 3">141 (3)</li>
-    </ul> -->
+    <ul class="list">
+        <li class="list_item" v-for="group in groups" @click="item = group">            
+            {{ group }}</li>
+    </ul>
     <test1 />
 </template>
 

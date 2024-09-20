@@ -27,11 +27,5 @@ onMounted(() => {
             <Fri />
             <Sat />
         </div>
-        <!-- <div class="week2">
-            <Mon />
-            <Tue />
-            <Wed />
-            <Thu />
-        </div> -->
     </div>
 </template>

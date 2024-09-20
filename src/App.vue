@@ -1,3 +1,7 @@
+<script setup>
+import Menu from './components/menu/Menu.vue'
+</script>
+
 <template>
     <div class="wrapper">
         <header class="header">
@@ -5,25 +9,11 @@
                 <div class="logo">
                     <div class="title">ЧНУ</div>
                 </div>
-                <div class="menu">
-                    <div class=" menu-item">
-                        <RouterLink :to="{ name: 'home' }">Головна</RouterLink>
-                    </div>
-                    <div class="menu-item">
-                        <RouterLink :to="{ name: 'about' }">Про нас</RouterLink>
-                    </div>
-                    <div class="menu-item">
-                        <RouterLink :to="{ name: 'contacts' }">Контакти</RouterLink>
-                    </div>
-                    <div class=" menu-item">
-                        <RouterLink :to="{ name: 'schedule' }">Розклад</RouterLink>
-                    </div>
-                    <div class="menu-item">
-                        <RouterLink :to="{ name: 'notFound' }"> 404 </RouterLink>
-                    </div>
-                </div>
+                <Menu /> 
             </div>
         </header>
+
+
 
         <main class="main">
             <div class="main_container">
@@ -39,4 +29,13 @@
 
 <style>
 @import url('./style.scss');
+
+
+
+.title {
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
 </style>
