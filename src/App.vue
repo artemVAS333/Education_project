@@ -9,7 +9,7 @@ import Menu from './components/menu/Menu.vue'
                 <div class="logo">
                     <div class="title">ЧНУ</div>
                 </div>
-                <Menu /> 
+                <Menu />
             </div>
         </header>
 
@@ -30,12 +30,11 @@ import Menu from './components/menu/Menu.vue'
 <style>
 @import url('./style.scss');
 
-
-
+/* */
 .title {
     font-size: 28px;
     font-weight: bold;
 }
 
-
+/*  */
 </style>

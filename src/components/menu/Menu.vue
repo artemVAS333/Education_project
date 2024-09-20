@@ -6,15 +6,21 @@
         <RouterLink :to="{ name: 'home' }">
             <div class=" menu-item">Головна</div>
         </RouterLink>
-        <div class="menu-item">
-            <RouterLink :to="{ name: 'about' }">Про нас</RouterLink>
-        </div>
-        <div class="menu-item">
-            <RouterLink :to="{ name: 'contacts' }">Контакти</RouterLink>
-        </div>
-        <div class=" menu-item">
-            <RouterLink :to="{ name: 'schedule' }">Розклад</RouterLink>
-        </div>
+        <RouterLink :to="{ name: 'about' }">
+            <div class="menu-item">
+                Про нас
+            </div>
+        </RouterLink>
+        <RouterLink :to="{ name: 'contacts' }">
+            <div class="menu-item">
+                Контакти
+            </div>
+        </RouterLink>
+        <RouterLink :to="{ name: 'schedule' }">
+            <div class=" menu-item">
+                Розклад
+            </div>
+        </RouterLink>
     </div>
 </template>
 
