@@ -52,13 +52,13 @@ body {
     font-style: normal;
 }
 
-.user-select-none {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.lock_scroll {
+    overflow: hidden;
 }
 
 ::selection {
@@ -66,7 +66,9 @@ body {
     color: var(--main-bg-color);
 }
 
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
+    z-index: -1999;
+    display: block;
     width: clamp(5px, 1vw, 7px);
     height: clamp(5px, 1vw, 7px);
 }
@@ -74,10 +76,19 @@ body {
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 20px;
-} */
+}
 
 :active,
 :hover,
 :focus {
     outline: 0;
+}
+
+.user-select-none {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }

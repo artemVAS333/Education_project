@@ -24,22 +24,22 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .header {
-        height: 100%;
+        background-color: unset;
+    }
 
-        &_container {
-            width: 100%;
-            height: 100%;
-            flex-direction: column;
-            justify-content: start;
-        }
+    .header_container {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: start;
     }
 }
 
 .main {
+    margin-top: 60px;
     height: 100%;
-    padding-top: 60px;
 
     &_container {
         font-size: clamp(14px, 2.5vw, 1rem);
@@ -52,7 +52,7 @@
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 992px) {
     .main {
         &_container {
             border-radius: 0;
