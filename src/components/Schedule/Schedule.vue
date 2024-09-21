@@ -1,11 +1,9 @@
 <script setup>
-import { reactive } from 'vue';
 import test1 from './test1.vue'
 
 const groups = [
     "141 (1)", "141 (2-1)", "141 (2-2)", "141 (3)"
 ]
-
 </script>
 
 <template>

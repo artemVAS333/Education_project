@@ -38,7 +38,7 @@ img {
 
 a {
     text-decoration: none;
-    color: #fbe2c2;
+    color: inherit;
     user-select: none;
 }
 
@@ -66,18 +66,15 @@ body {
     color: var(--main-bg-color);
 }
 
-::-webkit-scrollbar {
-    width: 7px;
-}
-
-::-webkit-scrollbar-track {
-    background: #fbe2c223;
+/* ::-webkit-scrollbar {
+    width: clamp(5px, 1vw, 7px);
+    height: clamp(5px, 1vw, 7px);
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
     border-radius: 20px;
-}
+} */
 
 :active,
 :hover,

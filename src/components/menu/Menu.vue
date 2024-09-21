@@ -2,26 +2,35 @@
 </script>
 
 <template>
-    <div class="menu">
-        <RouterLink :to="{ name: 'home' }">
-            <div class=" menu-item">Головна</div>
-        </RouterLink>
-        <RouterLink :to="{ name: 'about' }">
-            <div class="menu-item">
-                Про нас
-            </div>
-        </RouterLink>
-        <RouterLink :to="{ name: 'contacts' }">
-            <div class="menu-item">
-                Контакти
-            </div>
-        </RouterLink>
-        <RouterLink :to="{ name: 'schedule' }">
-            <div class=" menu-item">
-                Розклад
-            </div>
-        </RouterLink>
+    <div class="logo">
+        <span class="title">
+            <RouterLink :to="{ name: 'home' }">ЧНУ</RouterLink>
+        </span>
     </div>
+    <nav class="header_menu">
+        <ul class="header_menu_list">
+            <li class="menu_list_item">
+                <RouterLink :to="{ name: 'home' }" class="menu-item">
+                    Головна
+                </RouterLink>
+            </li>
+            <li class="menu_list_item">                
+                <RouterLink :to="{ name: 'about' }" class="menu-item">
+                    Про нас
+                </RouterLink>
+            </li>        
+            <li class="menu_list_item">
+                <RouterLink :to="{ name: 'contacts' }" class="menu-item">
+                    Контакти
+                </RouterLink>
+            </li>
+           <li class="menu_list_item">
+                <RouterLink :to="{ name: 'schedule' }" class="menu-item">
+                    Розклад
+                </RouterLink>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 <style lang="scss">

@@ -2,7 +2,6 @@ import { createApp } from 'vue'
 import App from './App.vue'
 
 import './assets/css/main.css'
-import './assets/js/script.js'
 
 import router from './components/router/router.js'
 
