@@ -10,8 +10,6 @@ import Menu from './components/menu/Menu.vue'
             </div>
         </header>
 
-
-
         <main class="main">
             <div class="main_container">
                 <RouterView />

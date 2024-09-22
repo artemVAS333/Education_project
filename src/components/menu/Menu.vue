@@ -31,9 +31,14 @@ import { openMenu } from './script';
                         Контакти
                     </RouterLink>
                 </li>
-            <li class="menu_list_item">
+                <li class="menu_list_item">
                     <RouterLink :to="{ name: 'schedule' }" @click="openMenu" class="menu-item">
                         Розклад
+                    </RouterLink>
+                </li>
+                <li class="menu_list_item">
+                    <RouterLink :to="{ name: 'notFound' }" @click="openMenu" class="menu-item">
+                        404
                     </RouterLink>
                 </li>
             </ul>
