@@ -10,12 +10,16 @@
     flex-wrap: wrap;
     gap: 10px;
     margin: 0 auto;
-    max-width: 1000px;
+    max-width: 992px;
 
     .list_item {
         max-width: 900px;
         margin: 0 auto;
     }
+}
+
+.schedule {
+    width: 100%;
 }
 
 .day {
@@ -84,3 +88,5 @@
 .timetable {
     text-align: center;
 }
+
+@media (max-width: 768px) {}
