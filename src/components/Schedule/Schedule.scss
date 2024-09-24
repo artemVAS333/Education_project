@@ -18,10 +18,6 @@
     }
 }
 
-.schedule {
-    width: 100%;
-}
-
 .day {
     background-color: #f7cb91;
     color: black;
@@ -46,47 +42,51 @@
     }
 }
 
-.shedule_day {
-    display: flex;
-}
-
-.subjects_of_day {
-    width: 100%;
-}
-
 .free {
     opacity: 0.5;
 }
 
+.subjects_of_day {
+    display: grid;
+    grid-auto-rows: 1fr;
+    gap: 2px;
+}
+
 .subject_info {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: max-content 2fr minmax(50px, 1fr) minmax(50px, 1fr);
+
+    justify-content: center;
     align-items: center;
-    margin: 2px;
+    text-align: center;
+
     background-color: #18253d30;
     border-radius: 5px;
-    padding: 2px 0;
 
-    :nth-child(n) {
-        padding: 0 10px;
+    :first-child {
+        text-align: left;
     }
 
-    .subject {
-        flex: 1 1 auto;
+    :last-child {
+        text-align: right;
+    }
+
+    :nth-child(n) {
+        padding: 2px 10px;
     }
 
     .teacher {
-        width: 200px;
-    }
-
-    .cabinet {
-        text-align: end;
-        width: 90px;
+        text-align: right;
     }
 }
 
-.timetable {
-    text-align: center;
-}
+@media (max-width: 992px) {
+    .day {
+        margin: 4px 0;
+        border-radius: 0;
+    }
 
-@media (max-width: 768px) {}
+    .currentDay {
+        border: none;
+    }
+}

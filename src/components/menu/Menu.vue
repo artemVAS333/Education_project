@@ -17,22 +17,22 @@ import { openMenu } from './script';
         <nav class="header_menu">
             <ul class="header_menu_list">
                 <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'home' }" @click="openMenu" class="menu-item">
+                    <RouterLink :to="{ name: 'home' }" class="menu-item">
                         Головна
                     </RouterLink>
                 </li>
                 <li class="menu_list_item">                
-                    <RouterLink :to="{ name: 'about' }" @click="openMenu" class="menu-item">
+                    <RouterLink :to="{ name: 'about' }" class="menu-item">
                         Про нас
                     </RouterLink>
                 </li>        
                 <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'contacts' }" @click="openMenu" class="menu-item">
+                    <RouterLink :to="{ name: 'contacts' }" class="menu-item">
                         Контакти
                     </RouterLink>
                 </li>
                 <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'schedule' }" @click="openMenu" class="menu-item">
+                    <RouterLink :to="{ name: 'schedule' }" class="menu-item">
                         Розклад
                     </RouterLink>
                 </li>
