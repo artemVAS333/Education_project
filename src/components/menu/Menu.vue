@@ -1,5 +1,6 @@
 <script setup>
 import { openMenu } from './script';
+import router from '../router/router';
 </script>
 
 <template>
@@ -16,16 +17,19 @@ import { openMenu } from './script';
         </div>
         <nav class="header_menu">
             <ul class="header_menu_list">
-                <li class="menu_list_item">
+                <li class="menu_list_item" v-for="i in router.name">
+                    {{ router[i] }}
+                </li>
+                <!-- <li class="menu_list_item">
                     <RouterLink :to="{ name: 'home' }" class="menu-item">
                         Головна
                     </RouterLink>
                 </li>
-                <li class="menu_list_item">                
+                <li class=" menu_list_item">
                     <RouterLink :to="{ name: 'about' }" class="menu-item">
                         Про нас
                     </RouterLink>
-                </li>        
+                </li>
                 <li class="menu_list_item">
                     <RouterLink :to="{ name: 'contacts' }" class="menu-item">
                         Контакти
@@ -40,7 +44,7 @@ import { openMenu } from './script';
                     <RouterLink :to="{ name: 'notFound' }" @click="openMenu" class="menu-item">
                         404
                     </RouterLink>
-                </li>
+                </li> -->
             </ul>
         </nav>
     </div>

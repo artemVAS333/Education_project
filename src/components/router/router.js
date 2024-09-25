@@ -13,7 +13,7 @@ const link = {
     notFound: `/:pathMatch(.*)*`
 }
 
-const routes = [
+export const routes = [
     {
         name: 'home',
         path: link.home,
