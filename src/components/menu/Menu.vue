@@ -1,6 +1,14 @@
 <script setup>
-import { openMenu } from './script';
+import { ref } from 'vue';
 import router from '../router/router';
+
+const open = ref(false);
+const body = document.querySelector('body');
+
+const openMenu = () => {
+    open.value = !open.value;
+    body.classList.toggle('lock');
+}
 </script>
 
 <template>
@@ -8,46 +16,25 @@ import router from '../router/router';
         <div class="header_menu_interface">
             <div class="logo">
                 <span class="title">
-                    <RouterLink :to="{ name: 'home' }">ЧНУ</RouterLink>
+                    <RouterLink :to="router.options.routes[0].path" @click="open = false">ЧНУ</RouterLink>
                 </span>
             </div>
-            <div class="header_burger" @click="openMenu">
+            <div class="header_burger" @click="openMenu" :class="{ active: open }">
                 <span></span>
             </div>
         </div>
-        <nav class="header_menu">
-            <ul class="header_menu_list">
-                <li class="menu_list_item" v-for="i in router.name">
-                    {{ router[i] }}
-                </li>
-                <!-- <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'home' }" class="menu-item">
-                        Головна
-                    </RouterLink>
-                </li>
-                <li class=" menu_list_item">
-                    <RouterLink :to="{ name: 'about' }" class="menu-item">
-                        Про нас
-                    </RouterLink>
-                </li>
-                <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'contacts' }" class="menu-item">
-                        Контакти
-                    </RouterLink>
-                </li>
-                <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'schedule' }" class="menu-item">
-                        Розклад
-                    </RouterLink>
-                </li>
-                <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'notFound' }" @click="openMenu" class="menu-item">
-                        404
-                    </RouterLink>
-                </li> -->
-            </ul>
-        </nav>
     </div>
+    <nav class="header_menu" :class="{ active: open }">
+        <ul class="header_menu_list">
+            <li class="menu_list_item" v-for="route in router.options.routes.filter(route => route.showInMenu)"
+                :key="route.showInMenu">
+                <RouterLink :to="route.path" class="menu-item"
+                    :class="{ 'active': route.path === router.currentRoute.value.path }" @click="openMenu">
+                    {{ route.label }}
+                </RouterLink>
+            </li>
+        </ul>
+    </nav>
 </template>
 
 <style lang="scss">

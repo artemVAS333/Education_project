@@ -59,8 +59,10 @@ body {
     overflow-x: hidden;
 }
 
-body.lock {
-    overflow: hidden;
+@media (max-width: 768px) {
+    body.lock {
+        overflow: hidden;
+    }
 }
 
 ::selection {

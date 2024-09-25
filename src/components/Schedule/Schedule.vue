@@ -1,5 +1,5 @@
 <script setup>
-import Week from './Week.vue'
+// import Week from './Week.vue'
 
 const groups = [
     "141 (1)", "141 (2-1)", "141 (2-2)", "141 (3)"

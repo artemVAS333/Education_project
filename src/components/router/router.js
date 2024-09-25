@@ -13,49 +13,63 @@ const link = {
     notFound: `/:pathMatch(.*)*`
 }
 
-export const routes = [
+const routes = [
     {
         name: 'home',
+        label: 'Головна',
         path: link.home,
         component: Home,
         alias: `/`,
         meta: {
             toTop: true,
             behavior: true
-        }
+        },
+        showInMenu: true
     },
     {
         name: 'about',
+        label: 'Про нас',
         path: link.about,
         component: () => import('../views/About.vue'),
         meta: {
             toTop: true,
             behavior: false
-        }
+        },
+        showInMenu: true
     },
     {
         name: 'contacts',
+        label: 'Контакти',
         path: link.contacts,
         component: () => import('../views/Contacts.vue'),
         meta: {
             toTop: true,
             behavior: true
-        }
+        },
+        showInMenu: true
     },
     {
         name: 'schedule',
+        label: 'Розклад',
         path: link.schedule,
         component: () => import('../schedule/Schedule.vue'),
         meta: {
             toTop: false,
             behavior: false
-        }
+        },
+        showInMenu: true
     },
 
     {
         name: 'notFound',
+        label: '404',
         path: link.notFound,
         component: () => import('../views/NotFoundPage.vue'),
+        meta: {
+            toTop: false,
+            behavior: false
+        },
+        showInMenu: false
     }
 ]
 
