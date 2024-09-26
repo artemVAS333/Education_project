@@ -13,13 +13,13 @@ const toggleMenu = () => {
 <template>
     <div class="header_menu_container">
         <div class="header_menu_interface">
-            <div class="header_burger" @click="toggleMenu" :class="{ active: open }">
-                <span></span>
-            </div>
             <div class="logo">
                 <span class="title">
                     <RouterLink :to="router.options.routes[0].path" @click="open = false">ЧНУ</RouterLink>
                 </span>
+            </div>
+            <div class="header_burger" @click="toggleMenu" :class="{ active: open }">
+                <span></span>
             </div>
         </div>
     </div>

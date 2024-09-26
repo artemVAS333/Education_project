@@ -1,27 +1,11 @@
 <script setup>
-<<<<<<< HEAD
-// import Week from './Week.vue'
-
-const groups = [
-    "141 (1)", "141 (2-1)", "141 (2-2)", "141 (3)"
-]
-=======
-import test1 from './test1.vue'
->>>>>>> parent of f2e6b51 (menu)
-
-// const groups = [
-//     "141 (1)", "141 (2-1)", "141 (2-2)", "141 (3)"
-// ]
+import Week from './Week.vue';
 </script>
 
 <template>
-    <!-- <ul class="list">
-        <li class="list_item" v-for="group in groups" @click="item = group">            
-            {{ group }}</li>
-    </ul> -->
-    <test1 />
+    <Week />
 </template>
 
 <style lang="scss">
-@import url('./Schedule.scss');
+@import url('./style.scss');
 </style>
