@@ -56,7 +56,6 @@
     color: #fbe2c2;
     border: 1px solid #fbe2c2;
     border-radius: 10px;
-    box-shadow: 0 0 10px #fbe2c2;
 
     .subject_info {
         background-color: #f7cb9110;
@@ -84,24 +83,16 @@
     background-color: #18253d30;
     border-radius: 5px;
 
-    :nth-child(n) {
-        padding: 2px;
-    }
-
     :first-child {
-        border-right: 1px solid #18253d;
-        padding-right: 8px;
-        height: 60%;
-
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
         text-align: left;
     }
 
     :last-child {
         text-align: right;
+    }
+
+    :nth-child(n) {
+        padding: 2px 10px;
     }
 
     .teacher {
@@ -110,12 +101,6 @@
 }
 
 @media (max-width: 992px) {
-    .subjects_of_day {
-        display: grid;
-        grid-auto-rows: minmax(70px, auto);
-        gap: 2px;
-    }
-
     .day {
         margin: 4px 0;
         border-radius: 0;
