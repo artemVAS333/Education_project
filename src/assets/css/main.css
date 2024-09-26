@@ -59,15 +59,10 @@ body {
     overflow-x: hidden;
 }
 
-<<<<<<< HEAD:src/assets/style/main.css
 @media (max-width: 768px) {
     body.lock {
         overflow: hidden;
     }
-=======
-.lock {
-    overflow: hidden;
->>>>>>> parent of f2e6b51 (menu):src/assets/css/main.css
 }
 
 ::selection {

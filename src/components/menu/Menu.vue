@@ -1,5 +1,4 @@
 <script setup>
-<<<<<<< HEAD
 import { ref } from 'vue';
 import router from '../router/router';
 
@@ -9,9 +8,6 @@ const toggleMenu = () => {
     open.value = !open.value;
     document.body.classList.toggle('lock');
 }
-=======
-import { openMenu } from './script';
->>>>>>> parent of f2e6b51 (menu)
 </script>
 
 <template>
@@ -26,38 +22,6 @@ import { openMenu } from './script';
                 </span>
             </div>
         </div>
-<<<<<<< HEAD
-=======
-        <nav class="header_menu">
-            <ul class="header_menu_list">
-                <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'home' }" class="menu-item">
-                        Головна
-                    </RouterLink>
-                </li>
-                <li class="menu_list_item">                
-                    <RouterLink :to="{ name: 'about' }" class="menu-item">
-                        Про нас
-                    </RouterLink>
-                </li>        
-                <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'contacts' }" class="menu-item">
-                        Контакти
-                    </RouterLink>
-                </li>
-                <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'schedule' }" class="menu-item">
-                        Розклад
-                    </RouterLink>
-                </li>
-                <li class="menu_list_item">
-                    <RouterLink :to="{ name: 'notFound' }" @click="openMenu" class="menu-item">
-                        404
-                    </RouterLink>
-                </li>
-            </ul>
-        </nav>
->>>>>>> parent of f2e6b51 (menu)
     </div>
     <nav class="header_menu" :class="{ active: open }">
         <ul class="header_menu_list">
