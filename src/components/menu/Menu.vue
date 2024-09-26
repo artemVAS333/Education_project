@@ -5,7 +5,7 @@ import router from '../router/router';
 const open = ref(false);
 const body = document.querySelector('body');
 
-const openMenu = () => {
+const toggleMenu = () => {
     open.value = !open.value;
     body.classList.toggle('lock');
 }
@@ -14,7 +14,7 @@ const openMenu = () => {
 <template>
     <div class="header_menu_container">
         <div class="header_menu_interface">
-            <div class="header_burger" @click="openMenu" :class="{ active: open }">
+            <div class="header_burger" @click="toggleMenu" :class="{ active: open }">
                 <span></span>
             </div>
             <div class="logo">
@@ -29,7 +29,7 @@ const openMenu = () => {
             <li class="menu_list_item" v-for="route in router.options.routes.filter(route => route.showInMenu)"
                 :key="route.showInMenu">
                 <RouterLink :to="route.path" class="menu-item"
-                    :class="{ 'active': route.path === router.currentRoute.value.path }" @click="openMenu">
+                    :class="{ 'active': route.path === router.currentRoute.value.path }" @click="toggleMenu">
                     {{ route.label }}
                 </RouterLink>
             </li>
