@@ -1,26 +1,25 @@
 <script setup>
+<<<<<<< HEAD
 // import Week from './Week.vue'
 
 const groups = [
     "141 (1)", "141 (2-1)", "141 (2-2)", "141 (3)"
 ]
+=======
+import test1 from './test1.vue'
+>>>>>>> parent of f2e6b51 (menu)
 
+// const groups = [
+//     "141 (1)", "141 (2-1)", "141 (2-2)", "141 (3)"
+// ]
 </script>
 
 <template>
-    <ul class="list">
-        <li class="list_of_speccily">
-            <div class="title_of_speccily">Компʼтерні науки</div>
-            <div class="list_of_group_container">
-                <ul class="list_of_group">
-                    <li class="list_item_of_speccily_group" v-for="group in groups">
-                        {{ group }}
-                    </li>
-                </ul>
-            </div>
-        </li>
-    </ul>
-    <!-- <Week /> -->
+    <!-- <ul class="list">
+        <li class="list_item" v-for="group in groups" @click="item = group">            
+            {{ group }}</li>
+    </ul> -->
+    <test1 />
 </template>
 
 <style lang="scss">
