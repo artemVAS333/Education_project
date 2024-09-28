@@ -9,11 +9,12 @@
 .header {
     position: fixed;
     left: 0;
-    overflow: hidden;
     width: 100%;
     z-index: 1000;
 
     &_container {
+        background-color: #18253d;
+        max-width: 992px;
         margin: 0 auto;
         height: 60px;
     }

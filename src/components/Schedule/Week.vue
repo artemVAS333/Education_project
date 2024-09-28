@@ -1,11 +1,11 @@
 <script setup>
-import Mon from './week1/Mon.vue';
-import Tue from './week1/Tue.vue';
-import Wed from './week1/Wed.vue'
-import Thu from './week1/Thu.vue';
-import Fri from './week1/Fri.vue';
-import Sat from './week1/Sat.vue';
-import Sun from './week1/Sun.vue';
+import Mon from './week/Mon.vue';
+import Tue from './week/Tue.vue';
+import Wed from './week/Wed.vue'
+import Thu from './week/Thu.vue';
+import Fri from './week/Fri.vue';
+import Sat from './week/Sat.vue';
+import Sun from './week/Sun.vue';
 
 import { freeItems, currentDay } from './main';
 
