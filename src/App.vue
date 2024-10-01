@@ -20,6 +20,6 @@ import NavBar from './components/menu/NavBar.vue'
 	</div>
 </template>
 
-<style>
+<style lang="scss">
 @import url('./style.scss');
 </style>

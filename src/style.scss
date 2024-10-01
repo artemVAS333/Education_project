@@ -20,7 +20,7 @@
 		justify-content: space-between;
 		align-items: center;
 		position: relative;
-		background-color: #18253d;
+		background-color: $main-bg-color;
 		max-width: 992px;
 		margin: 0 auto;
 		overflow: hidden;
@@ -56,8 +56,6 @@
 
 .footer {
 	padding: 10px;
-	color: #fbe2c2;
 	text-align: center;
-
 	font-size: 18px;
 }
