@@ -1,6 +1,6 @@
 <script setup>
-	import router from '../router/router';
-	import { open, toggleMenu } from './script';
+	import router from '../router/router'
+	import { open, toggleMenu } from './script'
 </script>
 
 <template>

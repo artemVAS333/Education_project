@@ -1,19 +1,19 @@
 <script setup>
-	import Mon from './week/Mon.vue';
-	import Tue from './week/Tue.vue';
-	import Wed from './week/Wed.vue';
-	import Thu from './week/Thu.vue';
-	import Fri from './week/Fri.vue';
-	import Sat from './week/Sat.vue';
-	import Sun from './week/Sun.vue';
+	import Mon from './week/Mon.vue'
+	import Tue from './week/Tue.vue'
+	import Wed from './week/Wed.vue'
+	import Thu from './week/Thu.vue'
+	import Fri from './week/Fri.vue'
+	import Sat from './week/Sat.vue'
+	import Sun from './week/Sun.vue'
 
-	import { freeItems, currentDay } from './main';
+	import { freeItems, currentDay } from './main'
 
-	import { onMounted } from 'vue';
+	import { onMounted } from 'vue'
 	onMounted(() => {
-		freeItems();
-		currentDay();
-	});
+		freeItems()
+		currentDay()
+	})
 </script>
 
 <template>

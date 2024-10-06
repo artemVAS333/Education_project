@@ -1,8 +1,8 @@
-import { createRouter, createWebHistory } from 'vue-router';
+import { createRouter, createWebHistory } from 'vue-router'
 
-import Home from '../views/Home.vue';
+import Home from '../views/Home.vue'
 
-const name = 'Education';
+const name = 'Education'
 
 const link = {
 	home: `/${name}/`,
@@ -11,7 +11,7 @@ const link = {
 	schedule: `/${name}/schedule`,
 
 	notFound: `/:pathMatch(.*)*`,
-};
+}
 
 const routes = [
 	{
@@ -71,7 +71,7 @@ const routes = [
 		},
 		showInMenu: false,
 	},
-];
+]
 
 export default createRouter({
 	history: createWebHistory(),
@@ -79,9 +79,9 @@ export default createRouter({
 	scrollBehavior(to, from, savedPosition) {
 		if (to.meta.toTop) {
 			if (to.meta.behavior) {
-				return { top: 0, behavior: 'smooth' };
+				return { top: 0, behavior: 'smooth' }
 			}
-			return { top: 0 };
+			return { top: 0 }
 		}
 	},
-});
+})

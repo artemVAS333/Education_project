@@ -1,5 +1,5 @@
 <script setup>
-	import Week from './Week.vue';
+	import Week from './Week.vue'
 </script>
 
 <template>

@@ -1,6 +1,6 @@
 <script setup>
-	import Menu from './components/menu/Menu.vue';
-	import NavBar from './components/menu/NavBar.vue';
+	import Menu from './components/menu/Menu.vue'
+	import NavBar from './components/menu/NavBar.vue'
 </script>
 
 <template>
