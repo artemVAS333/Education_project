@@ -49,6 +49,8 @@
 
 .subjects_of_day {
 	display: grid;
+	// grid-template-columns: minmax(100px, 1fr);
+	// grid-auto-rows: 1fr;
 	grid-auto-rows: 1fr;
 	gap: 2px;
 }
