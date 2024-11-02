@@ -1,5 +1,6 @@
 .wrapper {
-	display: grid;
+	display: flex;
+	flex-direction: column;
 	min-height: 100vh;
 }
 
@@ -17,11 +18,12 @@
 }
 
 .main {
-	top: 60px;
+	flex: 1 0 auto;
+	top: 80px;
 	position: relative;
 	overflow: hidden;
-
 	&_container {
+		margin: 0 auto;
 		font-size: clamp(14px, 2.5vw, 1rem);
 		text-align: justify;
 		height: 100%;
@@ -31,6 +33,7 @@
 }
 
 .footer {
+	margin-top: auto;
 	text-align: center;
 	font-size: 18px;
 	max-width: $breakpoint-lg;

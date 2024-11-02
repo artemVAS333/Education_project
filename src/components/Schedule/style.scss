@@ -19,10 +19,6 @@
 }
 
 .day {
-	background-color: $main-bg-color;
-	color: $main-color;
-	margin: 10px;
-	border-radius: 5px;
 	padding: 10px 20px;
 
 	.title {
@@ -36,9 +32,6 @@
 	border-radius: 10px;
 	box-shadow: 0px 0px 3px 0 #9b42d3, 0 0 0 0 #fff, 0px 0px 6px 4px #9b42d3;
 	border: 1px solid #9b42d3;
-
-	.subject_info {
-	}
 }
 
 .free {
@@ -81,14 +74,5 @@
 		display: grid;
 		grid-auto-rows: minmax(70px, auto);
 		gap: 2px;
-	}
-
-	.day {
-		margin: 4px 0;
-		border-radius: 0;
-	}
-
-	.currentDay {
-		border: none;
 	}
 }
