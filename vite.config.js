@@ -15,9 +15,10 @@ export default defineConfig({
 	css: {
 		preprocessorOptions: {
 			scss: {
-				additionalData: `@import "./src/assets/scss/base/variables.scss"; 
-				@import "./src/assets/scss/base/mixins.scss"; 
-				@import "./src/assets/scss/base/functions.scss";`,
+				silenceDeprecations: ['legacy-js-api'],
+				additionalData: `@use "./src/assets/scss/base/variables.scss" as *;  
+				@use "./src/assets/scss/base/mixins.scss" as *; 
+				@use "./src/assets/scss/base/functions.scss" as *;`,
 			},
 		},
 	},

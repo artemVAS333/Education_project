@@ -1,6 +1,6 @@
 <script setup>
 	import Menu from './components/menu/Menu.vue'
-	import NavBar from './components/menu/NavBar.vue'
+	// import NavBar from './components/menu/NavBar.vue'
 </script>
 
 <template>
@@ -8,7 +8,7 @@
 		<header class="header">
 			<div class="header_container user-select-none">
 				<Menu />
-				<NavBar />
+				<!-- <NavBar /> -->
 			</div>
 		</header>
 		<main class="main">

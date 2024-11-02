@@ -10,17 +10,12 @@
 
 <style lang="scss">
 	.page_container {
-		position: absolute;
-		top: 35%;
-		left: 50%;
-		margin-right: -50%;
-		transform: translate(-50%, -50%);
-
 		font-weight: bold;
 		text-align: center;
+		margin: 0 5px;
 
 		.code {
-			font-size: 150px;
+			font-size: clamp(40px, 32vw, 220px);
 		}
 
 		.title {
@@ -28,10 +23,11 @@
 		}
 
 		.home_page-btn {
-			margin-top: 30px;
+			margin: 30px auto;
+			max-width: 200px;
 			border: 2px solid $main-color;
 			border-radius: 5px;
-			padding: 10px 20px;
+			padding: 8px 16px;
 			cursor: pointer;
 			transition: 0.3s;
 
