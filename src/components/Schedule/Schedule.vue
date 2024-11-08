@@ -1,6 +1,5 @@
 <script setup>
 	import data from './data.json'
-
 	import { freeItems, currentDay } from './main'
 
 	import { onMounted } from 'vue'

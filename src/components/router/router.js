@@ -78,9 +78,7 @@ export default createRouter({
 	routes: routes,
 	scrollBehavior(to, from, savedPosition) {
 		if (to.meta.toTop) {
-			if (to.meta.behavior) {
-				return { top: 0, behavior: 'smooth' }
-			}
+			if (to.meta.behavior) return { top: 0, behavior: 'smooth' }
 			return { top: 0 }
 		}
 	},

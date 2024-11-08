@@ -26,8 +26,6 @@
 
 		.code {
 			font-size: clamp(40px, 32vw, 220px);
-			transition: 0.3s ease;
-			cursor: pointer;
 
 			&::before {
 				content: '#';
@@ -37,6 +35,7 @@
 		}
 
 		.title {
+			font-size: clamp(20px, 5vw, 40px);
 		}
 
 		.home_page-btn {

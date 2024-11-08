@@ -1,1 +1,3 @@
-<template>contacts</template>
+<template>
+	<p>contacts</p>
+</template>
