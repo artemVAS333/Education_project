@@ -52,11 +52,12 @@ body {
 	overflow-x: hidden;
 	&.lock {
 		overflow: hidden;
+		// margin-right: clamp(5px, 1vw, 7px);
 	}
 }
 
 ::selection {
-	background-color: $main-color;
+	background-color: rgba(255, 255, 255, 0.8);
 	color: $main-bg-color;
 }
 
@@ -64,14 +65,17 @@ body {
 	display: none;
 	width: clamp(5px, 1vw, 7px);
 	height: clamp(5px, 1vw, 7px);
+	background-color: rgba(255, 255, 255, 0.2);
 }
 
 ::-webkit-scrollbar-thumb {
 	background-color: $main-color;
+	background-color: rgba(255, 255, 255, 0.2);
 	border-radius: 20px;
+	transition: 0.3s ease;
 
 	&:hover {
-		background-color: $main-color;
+		background-color: rgba(255, 255, 255, 0.5);
 	}
 }
 

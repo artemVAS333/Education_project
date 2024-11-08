@@ -1,0 +1,250 @@
+{
+	"days": [
+		{
+			"day": "Понеділок",
+			"subjects": [
+				{
+					"pair": "08:20 09:40",
+					"subject": "Архітектура комп'ютерів",
+					"teacher": "Стецько Ю.П.",
+					"cabinet": "8-224"
+				},
+				{
+					"pair": "09:50 11:10",
+					"subject": "Комп'ютерна дискретна математика",
+					"teacher": "Стецько Ю.П.",
+					"cabinet": "8-224"
+				},
+				{
+					"pair": "11:30 12:50",
+					"subject": "Алгоритмізація та програмування",
+					"teacher": "Фратавчан В.Г.",
+					"cabinet": "8-216"
+				},
+				{
+					"pair": "13:00 14:20",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "14:40 16:00",
+					"subject": "Фізичне виховання (за видами спорту)",
+					"teacher": "",
+					"cabinet": "16 корп."
+				},
+				{
+					"pair": "16:10 17:30",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				}
+			]
+		},
+		{
+			"day": "Вівторок",
+			"subjects": [
+				{
+					"pair": "08:20 09:40",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "09:50 11:10",
+					"subject": "Теоретичні основи кібернетики",
+					"teacher": "Дрінь Я.М.",
+					"cabinet": "9-2"
+				},
+				{
+					"pair": "11:30 12:50",
+					"subject": "Архітектура комп'ютерів",
+					"teacher": "Стецько Ю.П.",
+					"cabinet": "8-106"
+				},
+				{
+					"pair": "13:00 14:20",
+					"subject": "Українська мова (за професійним спрямуванням)",
+					"teacher": "Філіпчук М.В.",
+					"cabinet": "8-111"
+				},
+				{
+					"pair": "14:40 16:00",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "16:10 17:30",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				}
+			]
+		},
+		{
+			"day": "Середа",
+			"subjects": [
+				{
+					"pair": "08:20 09:40",
+					"subject": "Актуальні питання історії та культури України",
+					"teacher": "Юрій М.Ф.",
+					"cabinet": "8-106"
+				},
+				{
+					"pair": "09:50 11:10",
+					"subject": "Алгоритмізація та програмування",
+					"teacher": "Фратавчан В.Г.",
+					"cabinet": "8-224"
+				},
+				{
+					"pair": "11:30 12:50",
+					"subject": "Актуальні питання історії та культури України",
+					"teacher": "Юрій М.Ф.",
+					"cabinet": "8-106"
+				},
+				{
+					"pair": "13:00 14:20",
+					"subject": "Теоретичні основи кібернетики",
+					"teacher": "Філіпчук О.І.",
+					"cabinet": "8-213"
+				},
+				{
+					"pair": "14:40 16:00",
+					"subject": "Іноземна мова (за професійним спрямуванням)",
+					"teacher": "Кшевецький В.С.",
+					"cabinet": "8-111"
+				},
+				{
+					"pair": "16:10 17:30",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				}
+			]
+		},
+		{
+			"day": "Четвер",
+			"subjects": [
+				{
+					"pair": "08:20 09:40",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "09:50 11:10",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "11:30 12:50",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "13:00 14:20",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "14:40 16:00",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "16:10 17:30",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				}
+			]
+		},
+		{
+			"day": "П'ятниця",
+			"subjects": [
+				{
+					"pair": "08:20 09:40",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "09:50 11:10",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "11:30 12:50",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "13:00 14:20",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "14:40 16:00",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "16:10 17:30",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				}
+			]
+		},
+		{
+			"day": "Субота",
+			"subjects": [
+				{
+					"pair": "08:20 09:40",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "09:50 11:10",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "11:30 12:50",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "13:00 14:20",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "14:40 16:00",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				},
+				{
+					"pair": "16:10 17:30",
+					"subject": "",
+					"teacher": "",
+					"cabinet": ""
+				}
+			]
+		}
+	]
+}

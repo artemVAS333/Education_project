@@ -1,9 +1,8 @@
 <script setup>
 	import { onMounted } from 'vue'
-	import router from '../router/router'
 
+	import router from '../router/router'
 	import { open, toggleMenu } from './script'
-	import NavBar from './NavBar.vue'
 
 	onMounted(() => {
 		document.body.addEventListener('click', (e) => {
@@ -27,7 +26,28 @@
 				<div class="header_burger" @click="toggleMenu" :class="{ active: open }">
 					<span></span>
 				</div>
-				<NavBar />
+				<nav
+					class="header_menu"
+					:class="{
+						active: open,
+					}">
+					<ul class="header_menu_list">
+						<li
+							class="menu_list_item"
+							v-for="route in router.options.routes.filter((route) => route.showInMenu)"
+							:key="route.showInMenu"
+							@click="toggleMenu()">
+							<RouterLink
+								:to="route.path"
+								class="menu-item"
+								:class="{
+									active: route.path === router.currentRoute.value.path,
+								}">
+								{{ route.label }}
+							</RouterLink>
+						</li>
+					</ul>
+				</nav>
 			</div>
 		</div>
 	</div>
